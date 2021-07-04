@@ -75,4 +75,4 @@ async def id(motech, update):
         reply_markup=reply_markup
     )
 
-Motech.run()
+Motechyt.run()
