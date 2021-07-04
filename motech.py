@@ -84,14 +84,14 @@ async def forwarded(motech, msg):
     if msg.forward_from:
         text = "🤫Forward Information🤫\n\n"
         if msg.forward_from["is_bot"]:
-            text += "<b>🤖Bot</b>\n\n"
+            text += "<b>🤖Bot</b>"
         else:
             text += "<b>👤User</b>\n\n"
         text += f'\n👨‍💼Name{msg.forward_from["first_name"]} \n'
         if msg.forward_from["username"]:
-            text += f'🔗 UserName : @{msg.forward_from["username"]} \nID : `{msg.forward_from["id"]}`'
+            text += f'\n🔗 UserName : @{msg.forward_from["username"]} \nID : `{msg.forward_from["id"]}`'
         else:
-            text += f'🆔 ID : `{msg.forward_from["id"]}`'
+            text += f'\n🆔 ID : `{msg.forward_from["id"]}`'
         await msg.reply(text, quote=True)
     else:
         hidden = msg.forward_sender_name
@@ -101,15 +101,15 @@ async def forwarded(motech, msg):
                 quote=True,
             )
         else:
-            text = f"🤫Forward Information🤫. \n\n"
+            text = f"Forward Information👀."
             if msg.forward_from_chat["type"] == "channel":
-                text += "<b>📢 Channel</b>\n\n"
+                text += "\n\n<b>📢 Channel</b>"
             if msg.forward_from_chat["type"] == "supergroup":
-                text += "<b>🗣️ Group</b>\n\n"
+                text += "\n\n<b>🗣️ Group</b>\n\n"
             text += f'📃 Name\n{msg.forward_from_chat["title"]} \n\n'
             if msg.forward_from_chat["username"]:
-                text += f'<b>➡️ From</b> : @{msg.forward_from_chat["username"]} \n\n'
-                text += f'<b>🆔 ID</b> : `{msg.forward_from_chat["id"]}`\n\n'
+                text += f'\n\n<b>➡️ From</b> : @{msg.forward_from_chat["username"]} \n\n'
+                text += f'\n\n<b>🆔 ID</b> : `{msg.forward_from_chat["id"]}`\n\n'
             else:
                 text += f'<b>🆔 ID</b> `{msg.forward_from_chat["id"]}`\n\n'
             await msg.reply(text, quote=True)
