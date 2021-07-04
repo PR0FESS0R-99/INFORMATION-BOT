@@ -12,7 +12,7 @@ Motechyt = Client(
 @Motechyt.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
     text = f"""
-<b> 👋Hello {from_user.mention}
+<b> 👋Hello {motech.from_user.mention}
 
 <b>I CAN GET ANY PUBLIC AND PRIVATE CHANNEL ID
 
