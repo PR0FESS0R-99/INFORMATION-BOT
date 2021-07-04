@@ -82,14 +82,14 @@ async def id(motech, update):
 @Motechyt.on_message(filters.private & filters.forwarded)
 async def forwarded(motech, msg):
     if msg.forward_from:
-        text = "🤫Forward Information🤫\n\n"
+        text = "<b>🤫Forward Information🤫</b> \n\n"
         if msg.forward_from["is_bot"]:
             text += "<b>🤖Bot</b>"
         else:
             text += "<b>👤User</b>\n\n"
-        text += f'\n👨‍💼Name{msg.forward_from["first_name"]} \n'
+        text += f'👨‍💼Name{msg.forward_from["first_name"]} \n'
         if msg.forward_from["username"]:
-            text += f'\n🔗 UserName : @{msg.forward_from["username"]} \nID : `{msg.forward_from["id"]}`'
+            text += f'\n🔗 UserName : @{msg.forward_from["username"]} \n\n🆔 ID : <code>{msg.forward_from["id"]}</code>'
         else:
             text += f'\n🆔 ID : `{msg.forward_from["id"]}`'
         await msg.reply(text, quote=True)
@@ -97,7 +97,7 @@ async def forwarded(motech, msg):
         hidden = msg.forward_sender_name
         if hidden:
             await msg.reply(
-                f"Forward detected but unfortunately, {hidden} has enabled forwarding privacy, so I can't get their id",
+                f"❌️ERROR {hidden} ❌️ERROR",
                 quote=True,
             )
         else:
@@ -108,8 +108,8 @@ async def forwarded(motech, msg):
                 text += "\n\n<b>🗣️ Group</b>\n\n"
             text += f'📃 Name\n{msg.forward_from_chat["title"]} \n\n'
             if msg.forward_from_chat["username"]:
-                text += f'\n\n<b>➡️ From</b> : @{msg.forward_from_chat["username"]} \n\n'
-                text += f'\n\n<b>🆔 ID</b> : `{msg.forward_from_chat["id"]}`\n\n'
+                text += f'<b>➡️ From</b> : @{msg.forward_from_chat["username"]} \n\n'
+                text += f'<b>🆔 ID</b> : `{msg.forward_from_chat["id"]}`\n\n'
             else:
                 text += f'<b>🆔 ID</b> `{msg.forward_from_chat["id"]}`\n\n'
             await msg.reply(text, quote=True)
