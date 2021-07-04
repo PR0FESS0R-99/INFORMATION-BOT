@@ -64,6 +64,26 @@ MT_START = InlineKeyboardMarkup(
 # telegram information from motech.py
 @Motechyt.on_message(filters.private & filters.command("info"))
 async def info(motech, update):
+    update_channel = UPDATE_CHANNEL
+    if update_channel:
+        try:
+            user = await motech.get_chat_member(update_channel, update.chat.id)
+            if user.status == "kicked out":
+               await update.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 😜**")
+               return
+        except UserNotParticipant:
+            #await update.reply_text(f"Join @{Channel User Name} To Use Me") From Motech.py
+            await update.reply_text(
+                text="<b>📢 JOIN MY UPDATE CHANNEL 📢</b>",
+                reply_markup=InlineKeyboardMarkup([
+                    [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"t.me/{UPDATE_CHANNEL}")]
+              ])
+            )
+            return
+        except Exception:
+            await update.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
+            return 
+
     if update.from_user.last_name:
         last_name = update.from_user.last_name
     else:
@@ -90,6 +110,26 @@ async def info(motech, update):
 
 @Motechyt.on_message(filters.private & filters.command("id"))
 async def id(motech, update):
+    update_channel = UPDATE_CHANNEL
+    if update_channel:
+        try:
+            user = await motech.get_chat_member(update_channel, update.chat.id)
+            if user.status == "kicked out":
+               await update.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 😜**")
+               return
+        except UserNotParticipant:
+            #await update.reply_text(f"Join @{Channel User Name} To Use Me") From Motech.py
+            await update.reply_text(
+                text="<b>📢 JOIN MY UPDATE CHANNEL 📢</b>",
+                reply_markup=InlineKeyboardMarkup([
+                    [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"t.me/{UPDATE_CHANNEL}")]
+              ])
+            )
+            return
+        except Exception:
+            await update.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
+            return 
+
     text = f"""
 🆔 Your Telegram ID : <code>{update.from_user.id}</code>
 """
@@ -103,6 +143,26 @@ async def id(motech, update):
 # Forwarded message id from motech.py
 @Motechyt.on_message(filters.private & filters.forwarded)
 async def forwarded(motech, msg):
+    update_channel = UPDATE_CHANNEL
+    if update_channel:
+        try:
+            user = await motech.get_chat_member(update_channel, update.chat.id)
+            if user.status == "kicked out":
+               await update.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 😜**")
+               return
+        except UserNotParticipant:
+            #await update.reply_text(f"Join @{Channel User Name} To Use Me") From Motech.py
+            await update.reply_text(
+                text="<b>📢 JOIN MY UPDATE CHANNEL 📢</b>",
+                reply_markup=InlineKeyboardMarkup([
+                    [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"t.me/{UPDATE_CHANNEL}")]
+              ])
+            )
+            return
+        except Exception:
+            await update.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
+            return 
+
     if msg.forward_from:
         text = "<b>🤫Forward Information🤫</b> \n\n"
         if msg.forward_from["is_bot"]:
