@@ -101,7 +101,7 @@ async def forwarded(motech, msg):
                 quote=True,
             )
         else:
-            text = f"Forward Information👀."
+            text = f"<b>Forward Information👀</b>."
             if msg.forward_from_chat["type"] == "channel":
                 text += "\n\n<b>📢 Channel</b>"
             if msg.forward_from_chat["type"] == "supergroup":
