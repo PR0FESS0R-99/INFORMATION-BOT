@@ -7,13 +7,14 @@ Motechyt = Client(
             "MT ID BOT",
             bot_token = os.environ["BOT_TOKEN"],
             api_id = int(os.environ["API_ID"]),
-            api_hash = os.environ["API_HASH"]
+            api_hash = os.environ["API_HASH"],
+            UPDATE_CHANNEL = os.environ["UPDATE_CHANNEL"]
 )
 
-# start 
+# start and Update channel added
 @Motechyt.on_message(filters.private & filters.command("start"))
 async def start(motech, update):
-    update_channel = "mo_tech_YT"
+    update_channel = UPDATE_CHANNEL
     if update_channel:
         try:
             user = await motech.get_chat_member(update_channel, update.chat.id)
@@ -25,12 +26,12 @@ async def start(motech, update):
             await update.reply_text(
                 text="<b>📢 JOIN MY UPDATE CHANNEL 📢</b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url="t.me/mo_tech_YT")]
+                    [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"t.me/{UPDATE_CHANNEL}")]
               ])
             )
             return
         except Exception:
-            await update.reply_text("Add Your Update Channel")
+            await update.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
             return  
 
     text = f"""
