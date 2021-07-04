@@ -4,10 +4,10 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 Motechyt = Client(
             "MT ID BOT",
-            bot_token = os.environ("BOT_TOKEN"),
-            api_id = int(os.environ("API_ID")),
-            api_hash = os.environ("API_HASH")
-    )
+            bot_token = os.environ["BOT_TOKEN"],
+            api_id = int(os.environ["API_ID"]),
+            api_hash = os.environ["API_HASH"]
+)
 
 @Motechyt.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
