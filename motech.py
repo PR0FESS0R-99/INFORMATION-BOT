@@ -2,13 +2,13 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
+from files import UPDATE_CHANNEL
 
 Motechyt = Client(
             "MT ID BOT",
             bot_token = os.environ["BOT_TOKEN"],
             api_id = int(os.environ["API_ID"]),
-            api_hash = os.environ["API_HASH"],
-            UPDATE_CHANNEL = os.environ["UPDATE_CHANNEL"]
+            api_hash = os.environ["API_HASH"]
 )
 
 # start and Update channel added
