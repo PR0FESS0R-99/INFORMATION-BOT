@@ -1,1 +1,1 @@
-UPDATE_CHANNEL = os.environ["UPDATE_CHANNEL"]
+UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL")
