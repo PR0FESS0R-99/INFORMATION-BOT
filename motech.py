@@ -10,7 +10,7 @@ Motech = Client(
    )
 
 @Motech.on_message(filters.private & filters.command("start"))
-async def start(bot, update):
+async def start(motech, update):
     text = """
 <b> 👋Hello {}
 
@@ -38,7 +38,7 @@ MT_START = InlineKeyboardMarkup(
    )
 
 @Motech.on_message(filters.private & filters.command("info"))
-async def info(bot, update):
+async def info(motech, update):
     if update.from_user.last_name:
         last_name = update.from_user.last_name
     else:
@@ -64,7 +64,7 @@ async def info(bot, update):
     )
 
 @Motech.on_message(filters.private & filters.command("id"))
-async def id(bot, update):
+async def id(motech, update):
     text = f"""
 🆔 Your Telegram ID : {update.from_user.id}
 """
