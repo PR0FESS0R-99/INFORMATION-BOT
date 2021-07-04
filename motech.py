@@ -86,8 +86,8 @@ async def forwarded(motech, msg):
         if msg.forward_from["is_bot"]:
             text += "<b>🤖Bot</b>"
         else:
-            text += "<b>👤User</b>\n\n"
-        text += f'👨‍💼Name{msg.forward_from["first_name"]} \n'
+            text += "<b>👤User</b>"
+        text += f'\nn👨‍💼Name{msg.forward_from["first_name"]} \n'
         if msg.forward_from["username"]:
             text += f'\n🔗 UserName : @{msg.forward_from["username"]} \n\n🆔 ID : <code>{msg.forward_from["id"]}</code>'
         else:
