@@ -1,14 +1,15 @@
 import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from config import Config as Motech
+from config import Config 
+from config import Config as Motechyt
 
 Motech = Client(
         "MT ID BOT",
-        bot_token =Motech.MT_BOT_TOKEN,
-        api_id =Motech.API_ID,
-        api_hash =Motech.API_HASH
-)
+        bot_token =Motechyt.MT_BOT_TOKEN,
+        api_id =Motechyt.API_ID,
+        api_hash =Motechyt.API_HASH
+   )
 
 @Motech.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
