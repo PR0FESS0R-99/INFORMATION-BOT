@@ -14,7 +14,7 @@
   </a>  
 </p>
 
-<details><summary>## Deploy To Heroku</summary>
+<details><summary>Deploy To Heroku</summary>
 <p>
 <br>
 <a href="https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/ID-Bot/tree/main">
@@ -23,7 +23,7 @@
 </p>
 </details>
 
-##### <details><summary>Deploy To VPS</summary>
+<details><summary>Deploy To VPS</summary>
 <p>
 <pre>
 Running https://github.com/PR0FESS0R-99/ID-Bot/tree/blob/main
@@ -35,7 +35,7 @@ python3 -m motech.py
 </p>
 </details>
 
-##### <details><summary>Credits</summary>
+<details><summary>Credits</summary>
 <p>
 <pre>
                                                                                                             
