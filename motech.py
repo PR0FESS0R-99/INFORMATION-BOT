@@ -10,7 +10,7 @@ Motechyt = Client(
 )
 
 @Motechyt.on_message(filters.private & filters.command("start"))
-async def start(bot, update):
+async def start(motech, update):
     text = f"""
 <b> 👋Hello {motech.from_user.mention}
 
