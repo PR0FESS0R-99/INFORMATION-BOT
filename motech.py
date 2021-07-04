@@ -28,6 +28,7 @@ await update.reply_text(
     text=text,
     disable_web_page_preview=True,
     reply_markup=reply_markup
+  )
 
 MT_START = InlineKeyboardMarkup(
      [[
