@@ -2,7 +2,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import Config 
-from config import Config as Motechyt
+from Config import Config as Motechyt
 
 Motech = Client(
         "MT ID BOT",
