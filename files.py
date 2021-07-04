@@ -1,0 +1,1 @@
+UPDATE_CHANNEL = os.environ["UPDATE_CHANNEL"]
