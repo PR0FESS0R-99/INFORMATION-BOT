@@ -15,7 +15,7 @@ async def start(motech, update):
     update_channel = "mo_tech_YT"
     if update_channel:
         try:
-            user = await bot.get_chat_member(update_channel, update.chat.id)
+            user = await motech.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked out":
                await update.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 😜**")
                return
