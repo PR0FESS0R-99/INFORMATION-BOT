@@ -30,12 +30,12 @@ await update.reply_text(
     reply_markup=reply_markup
 
 MT_START = InlineKeyboardMarkup(
-        [[
-           InlineKeyboardButton("🗣️Group", url="t.me/mo_tech_group"),
-           InlineKeyboardButton("📑Bot List", url="t.me/mo_tech_yt"),
-           InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/ID-Bot")
-       ]]
-    )
+     [[
+        InlineKeyboardButton("🗣️Group", url=f"t.me/mo_tech_group"),
+        InlineKeyboardButton("📑Bot List", url=f"t.me/mo_tech_yt"),
+        InlineKeyboardButton("✳️Source", url=f"https://github.com/PR0FESS0R-99/ID-Bot")
+     ]]
+   )
 
 @Motech.on_message(filters.private & filters.command("info"))
 async def info(bot, update):
