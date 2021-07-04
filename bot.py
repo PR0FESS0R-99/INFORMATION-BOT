@@ -12,7 +12,7 @@ Motechyt = Client(
 @Motechyt.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
     text = """
-<b> 👋Hello {}
+<b> 👋Hello {bot.from_user.mention}
 
 <b>I CAN GET ANY PUBLIC AND PRIVATE CHANNEL ID
 
@@ -21,7 +21,7 @@ FORWARD A MESSAGE FROM YOUR CHANNEL TO GET YOUR CHANNEL ID.
 FOR USER ID USE:- /id
 
 More information /info</b>
-""".format(bot.from_user.mention)
+"""
     reply_markup =  MT_START
     await update.reply_text(
         text=text,
