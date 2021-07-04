@@ -2,14 +2,14 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-Motech = Client(
-        "MT ID BOT",
-        bot_token =os.environ.get("BOT_TOKEN", ""),
-        api_id =int(os.environ.get("APP_ID", 12345)),
-        api_hash =int(os.environ.get("API_HASH")
-   )
+Motechyt = Client(
+         "MT ID BOT",
+         bot_token =os.environ.get("BOT_TOKEN", ""),
+         api_id =int(os.environ.get("APP_ID", 12345)),
+         api_hash =os.environ.get("API_HASH")
+    )
 
-@Motech.on_message(filters.private & filters.command("start"))
+@Motechyt.on_message(filters.private & filters.command("start"))
 async def start(motech, update):
     text = """
 <b> 👋Hello {}
@@ -37,7 +37,7 @@ MT_START = InlineKeyboardMarkup(
      ]]
    )
 
-@Motech.on_message(filters.private & filters.command("info"))
+@Motechyt.on_message(filters.private & filters.command("info"))
 async def info(motech, update):
     if update.from_user.last_name:
         last_name = update.from_user.last_name
@@ -63,7 +63,7 @@ async def info(motech, update):
         reply_markup=reply_markup
     )
 
-@Motech.on_message(filters.private & filters.command("id"))
+@Motechyt.on_message(filters.private & filters.command("id"))
 async def id(motech, update):
     text = f"""
 🆔 Your Telegram ID : {update.from_user.id}
