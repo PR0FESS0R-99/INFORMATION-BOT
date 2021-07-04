@@ -1,0 +1,42 @@
+{
+    "name": "Id Bot",
+    "description": "iam Id Bot @MRK_YT",
+    "logo": "https://telegra.ph/file/9e831d15da94deb56ef4c.png",
+    "keywords": [
+        "Telegram",
+        "Id",
+        "Bot"
+    ],
+    "website": "https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ",
+    "repository": "https://github.com/PR0FESS0R-99/ID-Bot",
+    "success_url": "https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org or @MT_MyTelegramOrg_Bot",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org or @MT_MyTelegramOrg_Bot",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "UPDATE_CHANNEL": {
+            "description": "Channel User Name Without @ Eg Mo_Tech_YT",
+            "value": "Mo_Tech_YT"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
