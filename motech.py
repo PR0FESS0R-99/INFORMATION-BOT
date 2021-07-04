@@ -5,7 +5,7 @@ from Config import Config as Motech
 
 Motech = Client(
         "MT ID BOT",
-        bot_token =Motech.MT_BOT_TOKEN
+        bot_token =Motech.MT_BOT_TOKEN,
         api_id =Motech.API_ID,
         api_hash =Motech.API_HASH
 )
