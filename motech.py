@@ -5,9 +5,9 @@ from config import Config as Motechyt
 
 Motech = Client(
         "MT ID BOT",
-        bot_token =Motechyt.MT_BOT_TOKEN,
-        api_id =Motechyt.API_ID,
-        api_hash =Motechyt.API_HASH
+        bot_token =os.environ.get("BOT_TOKEN", ""),
+        api_id =int(os.environ.get("APP_ID", 12345)),
+        api_hash =int(os.environ.get("API_HASH")
    )
 
 @Motech.on_message(filters.private & filters.command("start"))
