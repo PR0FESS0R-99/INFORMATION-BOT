@@ -13,7 +13,7 @@ Motech = Client(
 @Motech.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
     text = """
-<b>👋Hello {}
+<b> 👋Hello {}
 
 <b>I CAN GET ANY PUBLIC AND PRIVATE CHANNEL ID
 
@@ -23,11 +23,11 @@ FOR USER ID USE:- /id
 
 More information /info</b>
 """.format(update.from_user.mention)
-reply_markup =  MT_START
-await update.reply_text(
-    text=text,
-    disable_web_page_preview=True,
-    reply_markup=reply_markup
+    reply_markup =  MT_START
+    await update.reply_text(
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup
   )
 
 MT_START = InlineKeyboardMarkup(
