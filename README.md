@@ -14,7 +14,7 @@
   </a>  
 </p>
 
-##### <details><summary>Deploy To Heroku</summary>
+<details><summary>## Deploy To Heroku</summary>
 <p>
 <br>
 <a href="https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/ID-Bot/tree/main">
