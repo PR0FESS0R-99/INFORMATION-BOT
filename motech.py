@@ -160,7 +160,7 @@ async def forwarded(motech, msg):
             )
             return
         except Exception:
-            await update.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
+            await msg.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
             return 
     if msg.forward_from:
         text = "<b>🤫Forward Information🤫</b> \n\n"
