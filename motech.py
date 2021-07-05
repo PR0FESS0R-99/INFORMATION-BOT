@@ -162,7 +162,6 @@ async def forwarded(motech, msg):
         except Exception:
             await update.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
             return 
-
     if msg.forward_from:
         text = "<b>🤫Forward Information🤫</b> \n\n"
         if msg.forward_from["is_bot"]:
