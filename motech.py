@@ -201,7 +201,7 @@ async def stickers(motech, msg):
     update_channel = UPDATE_CHANNEL
     if update_channel:
         try:
-            user = await motech.get_chat_member(update_channel, update.chat.id)
+            user = await motech.get_chat_member(update_channel, msg.chat.id)
             if user.status == "kicked out":
                await update.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 😜**")
                return
