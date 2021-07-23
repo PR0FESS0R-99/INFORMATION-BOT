@@ -53,4 +53,6 @@ Do **Fork** And **Star** The Repository If You Liked It.
 </p>
 </details>
 
+# BOT FEATURES 
 
+*A SIMPLE TELEGRAM BOT TO GET ID OF A PERSON CHANNEL OR A STICKER PACK..... 
