@@ -194,5 +194,16 @@ async def forwarded(motech, msg):
             else:
                 text += f'<b>🆔 ID</b> `{msg.forward_from_chat["id"]}`\n\n'
             await msg.reply(text, quote=True)
-
+     
+# Sticker ID WOULD GET COPYRIGHT UNDER AND RE GENERATED AND MODED BY @MR-JINN-OFTG
+@Motechyt.on_message(
+    filters.private
+    & ~filters.forwarded
+    & ~filters.command(["start", "about", "help", "id"])
+)
+async def stickers(idbot, msg):
+    if msg.sticker:
+        await msg.reply(f"This Sticker's ID is `{msg.sticker.file_id}`", quote=True)
+    else:
+        await msg.reply(f"Your Telegram ID is : `{msg.from_user.id}`")       
 Motechyt.run()
