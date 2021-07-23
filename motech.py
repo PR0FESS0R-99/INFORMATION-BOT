@@ -201,13 +201,13 @@ async def stickers(idbot, msg):
     update_channel = UPDATE_CHANNEL
     if update_channel:
         try:
-            user = await motech.get_chat_member(update_channel, msg.chat.id)
+            user = await motech.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked out":
-               await msg.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 😜**")
+               await update.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 😜**")
                return
         except UserNotParticipant:
-            #await msg.reply_text(f"Join @{Channel User Name} To Use Me") From Motech.py
-            await msg.reply_text(
+            #await update.reply_text(f"Join @{Channel User Name} To Use Me") From Motech.py
+            await update.reply_text(
                 text="<b>📢 JOIN MY UPDATE CHANNEL 📢</b>",
                 reply_markup=InlineKeyboardMarkup([
                     [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"t.me/{UPDATE_CHANNEL}")]
@@ -215,10 +215,11 @@ async def stickers(idbot, msg):
             )
             return
         except Exception:
-            await msg.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
+            await update.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
             return
-        if msg.sticker:
-            await msg.reply(f"This Sticker's ID is `{msg.sticker.file_id}`", quote=True)
-        else:
-            await msg.reply(f"Your Telegram ID is : `{msg.from_user.id}`")       
+
+    if msg.sticker:
+        await msg.reply(f"This Sticker's ID is `{msg.sticker.file_id}`", quote=True)
+    else:
+        await msg.reply(f"Your Telegram ID is : `{msg.from_user.id}`")       
 Motechyt.run()
