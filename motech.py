@@ -195,8 +195,8 @@ async def forwarded(motech, msg):
                 text += f'<b>🆔 ID</b> `{msg.forward_from_chat["id"]}`\n\n'
             await msg.reply(text, quote=True)
      
-# ADDED STICKER ID GETTING. COPYRIGHT UNDER AND RE GENERATED AND MODED BY @MR-JINN-OF-TG AND TO @PR0FESS0R-99
-@Motechyt.on_message(filters.private & ~filters.forwarded & ~filters.command(["start", "about", "help", "id"]))
+# ADDED STICKER ID GETTING. COPYRIGHT UNDER AND RE-GENERATED AND MODED BY @MR-JINN-OF-TG AND TO @PR0FESS0R-99
+@Motechyt.on_message(filters.private & ~filters.forwarded & ~filters.command(["start", "id"]))
 async def stickers(motech, msg):
     update_channel = UPDATE_CHANNEL
     if update_channel:
