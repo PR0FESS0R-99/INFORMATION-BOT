@@ -196,12 +196,27 @@ async def forwarded(motech, msg):
             await msg.reply(text, quote=True)
      
 # Sticker ID WOULD GET COPYRIGHT UNDER AND RE GENERATED AND MODED BY @MR-JINN-OFTG
-@Motechyt.on_message(
-    filters.private
-    & ~filters.forwarded
-    & ~filters.command(["start", "about", "help", "id"])
-)
+@Motechyt.on_message(filters.private & ~filters.forwarded & ~filters.command(["start", "about", "help", "id"]))
 async def stickers(idbot, msg):
+    update_channel = UPDATE_CHANNEL
+    if update_channel:
+        try:
+            user = await motech.get_chat_member(update_channel, msg.chat.id)
+            if user.status == "kicked out":
+               await msg.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 😜**")
+               return
+        except UserNotParticipant:
+            #await msg.reply_text(f"Join @{Channel User Name} To Use Me") From Motech.py
+            await msg.reply_text(
+                text="<b>📢 JOIN MY UPDATE CHANNEL 📢</b>",
+                reply_markup=InlineKeyboardMarkup([
+                    [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"t.me/{UPDATE_CHANNEL}")]
+              ])
+            )
+            return
+        except Exception:
+            await msg.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
+            return
     if msg.sticker:
         await msg.reply(f"This Sticker's ID is `{msg.sticker.file_id}`", quote=True)
     else:
