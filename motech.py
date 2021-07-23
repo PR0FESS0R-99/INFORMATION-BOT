@@ -217,8 +217,8 @@ async def stickers(idbot, msg):
         except Exception:
             await msg.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
             return
-    if msg.sticker:
-        await msg.reply(f"This Sticker's ID is `{msg.sticker.file_id}`", quote=True)
-    else:
-        await msg.reply(f"Your Telegram ID is : `{msg.from_user.id}`")       
+        if msg.sticker:
+            await msg.reply(f"This Sticker's ID is `{msg.sticker.file_id}`", quote=True)
+        else:
+            await msg.reply(f"Your Telegram ID is : `{msg.from_user.id}`")       
 Motechyt.run()
