@@ -207,7 +207,7 @@ async def stickers(motech, msg):
                return
         except UserNotParticipant:
             #await update.reply_text(f"Join @{Channel User Name} To Use Me") From Motech.py
-            await update.reply_text(
+            await msg.reply_text(
                 text="<b>📢 JOIN MY UPDATE CHANNEL 📢</b>",
                 reply_markup=InlineKeyboardMarkup([
                     [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"t.me/{UPDATE_CHANNEL}")]
