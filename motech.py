@@ -197,7 +197,7 @@ async def forwarded(motech, msg):
      
 # Sticker ID WOULD GET COPYRIGHT UNDER AND RE GENERATED AND MODED BY @MR-JINN-OFTG
 @Motechyt.on_message(filters.private & ~filters.forwarded & ~filters.command(["start", "about", "help", "id"]))
-async def stickers(idbot, msg):
+async def stickers(motech, msg):
     update_channel = UPDATE_CHANNEL
     if update_channel:
         try:
