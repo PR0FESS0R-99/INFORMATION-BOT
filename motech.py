@@ -99,6 +99,8 @@ async def info(motech, update):
 
 <b>🔗 Profile Link :</b> {update.from_user.mention}
 
+<b>♻️ DC Id :</b> {update.dc_id}
+
 <b>  © @Mo_Tech_YT</b>
 """ 
     reply_markup = MT_START 
