@@ -12,7 +12,7 @@ Motechyt = Client(
 )
 
 # start and Update channel added
-@Motechyt.on_message(filters.private & filters.command("start"))
+@Unlimtedmovie00 .on_message(filters.private & filters.command("start"))
 async def start(motech, update):
     update_channel = UPDATE_CHANNEL
     if update_channel:
@@ -22,20 +22,20 @@ async def start(motech, update):
                await update.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 😜**")
                return
         except UserNotParticipant:
-            #await update.reply_text(f"Join @{Channel User Name} To Use Me") From Motech.py
+            #await update.reply_text(f"Join @Unlimtedmovie00 To Use Me") From Motech.py
             await update.reply_text(
                 text="<b>📢 JOIN MY UPDATE CHANNEL 📢</b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"t.me/{UPDATE_CHANNEL}")]
+                    [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"t.me/Unlimtedmovie00")]
               ])
             )
-            return
+            retur
         except Exception:
             await update.reply_text(f"💢Add This Channel @{UPDATE_CHANNEL}")
             return  
 
     text = f"""
-<b> 👋Hello {update.from_user.mention}</b>
+<b> 👋Hello {Unlimtedmovie00 }</b>
 
 <b>I CAN GET ANY PUBLIC AND PRIVATE CHANNEL ID
 
@@ -64,10 +64,10 @@ MT_START = InlineKeyboardMarkup(
 # telegram information from motech.py
 @Motechyt.on_message(filters.private & filters.command("info"))
 async def info(motech, update):
-    update_channel = UPDATE_CHANNEL
+    update_channel = Unlimtedmovie00 
     if update_channel:
         try:
-            user = await motech.get_chat_member(update_channel, update.chat.id)
+            user = await FILM GALLERY.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked out":
                await update.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 😜**")
                return
