@@ -8,15 +8,15 @@
         "Bot"
     ],
     "website": "https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ",
-    "repository": "https://github.com/PR0FESS0R-99/ID-Bot",
+    "repository": "https://github.com/PR0FESS0R-99/Demo",
     "success_url": "https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ",
     "env": {
         "API_ID": {
-            "description": "Your APP ID From my.telegram.org or @MT_MyTelegramOrg_Bot",
+            "description": "Your APP ID From https://youtu.be/5eEsvLAKVc0 or @MT_MyTelegramOrg_Bot",
             "value": ""
         },
         "API_HASH": {
-            "description": "Your API Hash From my.telegram.org or @MT_MyTelegramOrg_Bot",
+            "description": "Your API Hash From https://youtu.be/5eEsvLAKVc0 or @MT_MyTelegramOrg_Bot",
             "value": ""
         },
         "BOT_TOKEN": {
@@ -26,6 +26,10 @@
         "UPDATE_CHANNEL": {
             "description": "Channel User Name Without @ Eg Mo_Tech_YT",
             "value": "Mo_Tech_YT"
+        },
+        "BOT_USERNAME": {
+            "description": "Bot UserName From (https://youtu.be/cB4UduCcNWs) Without @ ",
+            "value": ""
         }
     },
     "buildpacks": [
