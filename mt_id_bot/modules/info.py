@@ -43,7 +43,7 @@ async def info(mt_id_bot, update):
 🆔 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝑰𝑫 : <i><code>{update.from_user.id}</code></i>
 
 🔗 𝑷𝒓𝒐𝒇𝒊𝒍𝒆 𝑳𝒊𝒏𝒌 : <i>{update.from_user.mention}</i>
-
+{update.from_user.dc_id}
 <b><i>  © @Mo_Tech_YT</i></b>
 """  
     reply_markup = BACK_BUTTON 
