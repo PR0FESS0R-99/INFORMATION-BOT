@@ -37,7 +37,7 @@ async def info(mt_id_bot, update):
         text = f"""
 <b>╭──「👤」
 |
-├ <b>🙋🏻‍♂️ 𝑭𝒊𝒓𝒔𝒕 𝑵𝒂𝒎𝒆 : <i>{update.from_user.first_name}</i>
+├ 🙋🏻‍♂️ 𝑭𝒊𝒓𝒔𝒕 𝑵𝒂𝒎𝒆 : <i>{update.from_user.first_name}</i>
 |
 ├ 🧖‍♂️ 𝑺𝒆𝒄𝒐𝒏𝒅 𝑵𝒂𝒎𝒆 : <i>{last_name}</i>
 |
