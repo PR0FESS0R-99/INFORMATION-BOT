@@ -43,8 +43,6 @@ async def info(mt_id_bot, update):
 <b>├ 🌍 𝑫𝑪 : {update.from_user.dc_id}
 ├ 🔗 𝑷𝒓𝒐𝒇𝒊𝒍𝒆 𝑳𝒊𝒏𝒌 : <i>{update.from_user.mention}</i>
 ╰──「<i>  © @Mo_Tech_YT</i>」</b>
-
-BIOGRAPHY {update.from_user.bio}
 """  
     reply_markup = BACK_BUTTON 
     await update.reply_text(  
