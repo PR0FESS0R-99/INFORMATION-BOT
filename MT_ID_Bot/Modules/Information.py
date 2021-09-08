@@ -77,26 +77,26 @@ async def info_handler(motech, update):
         reply_markup=reply_markup
     )
 
+@MT_ID_Bot.on_callback_query(filters.regex(r"^(start|help|about|id|info|close)$"))
+async def callback_data(mt_id_bot, update: CallbackQuery):
 
-@MT_ID_Bot.on_callback_query()
-async def cb_handler(client, update: CallbackQuery):
+    query_data = update.data
 
-    if query.data == "id":
-        await query.answer()
-
-        await query.message.edit_text(
+    if query_data == "id":
+        
+        await update.message.edit_text(
             Translation.ID_TEXT.format(update.from_user.id),
             reply_markup=ID_BUTTON,
+            parse_mode="html",
             disable_web_page_preview=True
         )
-        return
 
-    elif query.data == "info":
-        await query.answer()
 
-        await query.message.edit_text(
-            Translation.INFO_TEXT.format(update.from_user.first_name, last_name, update.from_user.username, update.from_user.id, update.from_user.mention, update.from_user.dc_id, update.from_user.language_code, update.from_user.status),             
+    if query_data == "info":
+        
+        await update.message.edit_text(
+            Translation.INFO_TEXT.format(update.from_user.first_name, last_name, update.from_user.username, update.from_user.id, update.from_user.mention, update.from_user.dc_id, update.from_user.language_code, update.from_user.status),
             reply_markup=INFO_BUTTON,
+            parse_mode="html",
             disable_web_page_preview=True
         )
-        return
