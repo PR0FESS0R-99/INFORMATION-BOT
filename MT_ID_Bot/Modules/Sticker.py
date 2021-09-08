@@ -4,15 +4,6 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
 from MT_ID_Bot.Translation import Translation
 from MT_ID_Bot.Config import Config
-from MT_ID_Bot.Commands.Buttons import START_BUTTON, HELP_BUTTON, ABOUT_BUTTON
-
-UPDATE_CHANNEL=Config.UPDATE_CHANNEL # Update Channel Forces Subscribe
-BOT_USERNAME=Config.BOT_USERNAME # ReStart Option 
-JOIN=Translation.JOIN_TEXT # Button Text (Update Channel)
-TRY=Translation.TRY_TEXT # Button Text (Update Channel)
-SUB_TEXT=Translation.FSUB_TEXT # FSUB Information Text
-from MT_ID_Bot.Translation import Translation
-from MT_ID_Bot.Config import Config
 
 UPDATE_CHANNEL=Config.UPDATE_CHANNEL # Update Channel Forces Subscribe
 BOT_USERNAME=Config.BOT_USERNAME # ReStart Option 
