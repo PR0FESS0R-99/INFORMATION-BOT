@@ -79,7 +79,7 @@ async def info_handler(motech, update):
 
 
 @MT_ID_Bot.on_callback_query()
-async def cb_handler(client, update):
+async def cb_handler(client, query, update):
 
     if query.data == "id":
         await query.answer()
