@@ -38,6 +38,6 @@ async def stickers(motech, msg):
             return  
 
     if msg.sticker:
-        await msg.reply(f"𝐘𝐨𝐮𝐫 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐈𝐃 𝐢𝐬`{msg.sticker.file_id}`", quote=True)
+        await msg.reply(f"𝐘𝐨𝐮𝐫 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐈𝐃 𝐢𝐬\n`{msg.sticker.file_id}`", quote=True)
     else:
         await msg.reply(Translation.ID_TEXT.format(msg.from_user.id))
