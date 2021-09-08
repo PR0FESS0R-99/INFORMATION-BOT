@@ -1,11 +1,10 @@
-"""
 from pyrogram import filters
 from pyrogram import Client as MT_ID_Bot
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
 from MT_ID_Bot.Translation import Translation
 from MT_ID_Bot.Config import Config
-from MT_ID_Bot.Commands.Buttons import START_BUTTON
+from MT_ID_Bot.Commands.Buttons import START_BUTTON, HELP_BUTTON, ABOUT_BUTTON
 
 UPDATE_CHANNEL=Config.UPDATE_CHANNEL # Update Channel Forces Subscribe
 BOT_USERNAME=Config.BOT_USERNAME # ReStart Option 
@@ -99,4 +98,4 @@ async def about_handler(motech, update):
         text=Translation.ABOUT_MSG,
         disable_web_page_preview=True,
         reply_markup=reply_markup
-  )"""
+  )
