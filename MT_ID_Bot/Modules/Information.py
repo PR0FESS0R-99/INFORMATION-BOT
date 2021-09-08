@@ -95,7 +95,7 @@ async def callback_data(mt_id_bot, update: CallbackQuery):
     if query_data == "info":
         
         await update.message.edit_text(
-            Translation.INFO_TEXT.format(update.from_user.first_name, last_name, update.from_user.username, update.from_user.id, update.from_user.mention, update.from_user.dc_id, update.from_user.language_code, update.from_user.status),
+            Translation.INFO_TEXT.format(update.from_user.first_name, update.from_user.last_name, update.from_user.username, update.from_user.id, update.from_user.mention, update.from_user.dc_id, update.from_user.language_code, update.from_user.status),
             reply_markup=INFO_BUTTON,
             parse_mode="html",
             disable_web_page_preview=True
