@@ -77,7 +77,7 @@ async def info_handler(motech, update):
         reply_markup=reply_markup
     )
 
-@MT_ID_Bot.on_callback_query(filters.regex(r"^(start|help|about|id|info|close)$"))
+@MT_ID_Bot.on_callback_query(filters.regex(r"^(id|info)$"))
 async def callback_data(mt_id_bot, update: CallbackQuery):
 
     query_data = update.data
