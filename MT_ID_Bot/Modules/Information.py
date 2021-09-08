@@ -1,6 +1,6 @@
 from pyrogram import filters
 from pyrogram import Client as MT_ID_Bot
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.errors import UserNotParticipant
 from MT_ID_Bot.Translation import Translation
 from MT_ID_Bot.Config import Config
@@ -79,7 +79,7 @@ async def info_handler(motech, update):
 
 
 @MT_ID_Bot.on_callback_query()
-async def cb_handler(client, update, query):
+async def cb_handler(client, update: CallbackQuery):
 
     if query.data == "id":
         await query.answer()
