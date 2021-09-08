@@ -2,8 +2,14 @@ from pyrogram import filters
 from pyrogram import Client as MT_ID_Bot
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
-from files import UPDATE_CHANNEL, BOT_USER_NAME
-from mt_id_bot.text.fsub_text import SUB_TEXT, SUB_JOIN, SUB_TRY, SUB_UPDATE
+from MT_ID_Bot.Translation import Translation
+from MT_ID_Bot.Config import Config
+
+UPDATE_CHANNEL=Config.UPDATE_CHANNEL # Update Channel Forces Subscribe
+BOT_USERNAME=Config.BOT_USERNAME # ReStart Option 
+JOIN=Translation.JOIN_TEXT # Button Text (Update Channel)
+TRY=Translation.TRY_TEXT # Button Text (Update Channel)
+SUB_TEXT=Translation.FSUB_TEXT # FSUB Information Text
 
 @MT_ID_Bot.on_message(filters.private & filters.forwarded)
 async def info(motech, msg):
