@@ -7,17 +7,17 @@ logger = logging.getLogger(__name__)
 
 from pyrogram import Client 
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
-from files import BOT_TOKEN, API_ID, API_HASH
+from MT_ID_Bot.Config import Config
 
 if __name__ == "__main__" :
     plugins = dict(
-        root="mt_id_bot"
+        root="MT_ID_Bot"
     )
     mt_botz = Client(
         "MT ID BOT",
-        bot_token=BOT_TOKEN,
-        api_id=API_ID,
-        api_hash=API_HASH,
+        bot_token=Config.BOT_TOKEN,
+        api_id=Config.API_ID,
+        api_hash=Config.API_HASH,
         plugins=plugins,
         workers=100
     )
