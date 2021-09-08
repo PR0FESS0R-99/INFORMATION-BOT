@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 from pyrogram.errors import UserNotParticipant
 from MT_ID_Bot.Translation import Translation
 from MT_ID_Bot.Config import Config
-from MT_ID_Bot.Modules.Buttons import ID_BUTTON, INFO_BUTTON
+from MT_ID_Bot.Modules.Buttons import ID_BUTTON, INFO_BUTTON, ID_BUTTONS, INFO_BUTTONS
 
 UPDATE_CHANNEL=Config.UPDATE_CHANNEL # Update Channel Forces Subscribe
 BOT_USERNAME=Config.BOT_USERNAME # ReStart Option 
@@ -86,7 +86,7 @@ async def callback_data(mt_id_bot, update: CallbackQuery):
         
         await update.message.edit_text(
             Translation.ID_TEXT.format(update.from_user.id),
-            reply_markup=ID_BUTTON,
+            reply_markup=ID_BUTTONS,
             parse_mode="html",
             disable_web_page_preview=True
         )
@@ -96,7 +96,7 @@ async def callback_data(mt_id_bot, update: CallbackQuery):
         
         await update.message.edit_text(
             Translation.INFO_TEXT.format(update.from_user.first_name, update.from_user.last_name, update.from_user.username, update.from_user.id, update.from_user.mention, update.from_user.dc_id, update.from_user.language_code, update.from_user.status),
-            reply_markup=INFO_BUTTON,
+            reply_markup=INFO_BUTTONS,
             parse_mode="html",
             disable_web_page_preview=True
         )
