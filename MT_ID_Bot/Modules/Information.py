@@ -77,26 +77,26 @@ async def info_handler(motech, update):
         reply_markup=reply_markup
     )
 
-@MT_ID_Bot.on_callback_query(filters.regex(r"^(id|info)$"))
-async def callback_data(mt_id_bot, update: CallbackQuery):
 
-    query_data = update.data
+@MT_ID_Bot.on_callback_query()
+async def cb_handler(client, query):
 
-    if query_data == "id":
-        
-        await update.message.edit_text(
-            Translation.ID_TEXT.format(update.from_user.id),
+    if query.data == "id":
+        await query.answer()
+
+        await query.message.edit_text(
+            Translation.ID_TEXT.format(query.from_user.id),
             reply_markup=ID_BUTTONS,
-            parse_mode="html",
             disable_web_page_preview=True
         )
+        return
 
+    elif query.data == "info":
+        await query.answer()
 
-    if query_data == "info":
-        
-        await update.message.edit_text(
-            Translation.INFO_TEXT.format(update.from_user.first_name, update.from_user.last_name, update.from_user.username, update.from_user.id, update.from_user.mention, update.from_user.dc_id, update.from_user.language_code, update.from_user.status),
+        await query.message.edit_text(
+            Translation.INFO_TEXT.format(query.from_user.first_name, query.from_user.last_name, query.from_user.username, query.from_user.id, query.from_user.mention, query.from_user.dc_id, query.from_user.language_code, query.from_user.status),
             reply_markup=INFO_BUTTONS,
-            parse_mode="html",
             disable_web_page_preview=True
         )
+        return
