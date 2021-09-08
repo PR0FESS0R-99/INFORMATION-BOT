@@ -58,7 +58,7 @@ async def info(motech, msg):
                 text += "📢 𝐂𝐡𝐚𝐧𝐧𝐞𝐥"
             if msg.forward_from_chat["type"] == "supergroup":
                 text += "🗣️ 𝐆𝐫𝐨𝐮𝐩"
-            text += f'\n\n📃 𝐍𝐚𝐦𝐞\n{msg.forward_from_chat["title"]} \n\n'
+            text += f'\n\n📃 𝐍𝐚𝐦𝐞 {msg.forward_from_chat["title"]}'
             if msg.forward_from_chat["username"]:
                 text += f'\n\n➡️ 𝐅𝐫𝐨𝐦</b> : @{msg.forward_from_chat["username"]}'
                 text += f'\n\n🆔 𝐈𝐃 : `{msg.forward_from_chat["id"]}`'
