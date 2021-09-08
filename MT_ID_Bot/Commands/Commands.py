@@ -12,6 +12,12 @@ JOIN=Translation.JOIN_TEXT # Button Text (Update Channel)
 TRY=Translation.TRY_TEXT # Button Text (Update Channel)
 SUB_TEXT=Translation.FSUB_TEXT # FSUB Information Text
 
+developer="Mrk_yt"
+co_developer="MR_JINN_OF_TG"
+source="https://github.com/PR0FESS0R-99/ID-Bot"
+mt_chat="mo_tech_group"
+mt_bot="mo_tech_yt"
+
 @MT_ID_Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(motech, update):
     update_channel = UPDATE_CHANNEL
@@ -95,7 +101,7 @@ async def about_handler(motech, update):
             return  
     reply_markup =  ABOUT_BUTTON
     await update.reply_text(
-        text=Translation.ABOUT_MSG,
+        text=Translation.ABOUT_MSG.format(BOT_USERNAME, developer, co_developer, mt_chat, mt_bot, source)
         disable_web_page_preview=True,
         reply_markup=reply_markup
   )
