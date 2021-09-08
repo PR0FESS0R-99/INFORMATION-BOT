@@ -58,4 +58,4 @@ async def info(motech, msg):
                 text += f'\n\n🆔 𝐈𝐃 : `{msg.forward_from_chat["id"]}`'
             else:
                 text += f'🆔 𝐈𝐃 `{msg.forward_from_chat["id"]}`\n\n'
-            await msg.reply(text, quote=True
+            await msg.reply(text, quote=True)
