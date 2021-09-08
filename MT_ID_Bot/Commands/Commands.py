@@ -101,7 +101,7 @@ async def about_handler(motech, update):
             return  
     reply_markup =  ABOUT_BUTTON
     await update.reply_text(
-        text=Translation.ABOUT_MSG.format(BOT_USERNAME, developer, co_developer, mt_chat, mt_bot, source)
+        text=Translation.ABOUT_MSG.format(BOT_USERNAME, developer, co_developer, mt_chat, mt_bot, source),
         disable_web_page_preview=True,
         reply_markup=reply_markup
   )
