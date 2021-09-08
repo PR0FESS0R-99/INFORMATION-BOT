@@ -48,7 +48,7 @@ async def start_handler(motech, update):
   )
 
 
-@MT_ID_Bot.on_message(filters.private & filters.command("about"))
+@MT_ID_Bot.on_message(filters.private & filters.command("help"))
 async def help_handler(motech, update):
     update_channel = UPDATE_CHANNEL
     if update_channel:
@@ -77,7 +77,7 @@ async def help_handler(motech, update):
         reply_markup=reply_markup
   )
 
-@MT_ID_Bot.on_message(filters.private & filters.command("start"))
+@MT_ID_Bot.on_message(filters.private & filters.command("about"))
 async def about_handler(motech, update):
     update_channel = UPDATE_CHANNEL
     if update_channel:
