@@ -6,7 +6,7 @@ from MT_ID_Bot.Commands.Buttons import START_BUTTON, HELP_BUTTON, ABOUT_BUTTON
 from MT_ID_Bot.Commands.Commands import developer, co_developer, source, mt_chat, mt_bot
 from MT_ID_Bot.Modules.Buttons import ID_BUTTONS, INFO_BUTTONS
 
-UPDATE_CHANNEL=Config.UPDATE_CHANNEL # Update Channel Forces Subscribe
+BOT_USERNAME=Config.BOT_USERNAME # ReStart Option 
 
 @MT_ID_Bot.on_callback_query()
 async def cb_handler(client, query):
