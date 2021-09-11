@@ -1,7 +1,4 @@
-## Telegram Id Bot
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/PR0FESS0R-99/ID-Bot) 
-
+## Information Bot
 
   </a>
 </p>
