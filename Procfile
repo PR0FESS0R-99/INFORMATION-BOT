@@ -1,1 +1,1 @@
-web: python3 motech.py
+worker: python3 motech.py
