@@ -5,8 +5,6 @@ from pyrogram.errors import UserNotParticipant
 from MT_ID_Bot.Translation import Translation
 from MT_ID_Bot.Config import Config
 from MT_ID_Bot.Commands.Buttons import START_BUTTON, HELP_BUTTON, ABOUT_BUTTON
-from Database.Database import Database
-from MT_ID_Bot.check_user import handle_user_status
 
 UPDATE_CHANNEL=Config.UPDATE_CHANNEL # Update Channel Forces Subscribe
 BOT_USERNAME=Config.BOT_USERNAME # ReStart Option 
@@ -20,23 +18,28 @@ source="https://github.com/PR0FESS0R-99/ID-Bot"
 mt_chat="mo_tech_group"
 mt_bot="mo_tech_yt"
 
-db = Database(DB_URL, DB_NAME)
-
-@Bot.on_message(filters.private)
-async def _(bot, cmd):
-    await handle_user_status(bot, cmd)
-
 @MT_ID_Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(motech, update):
-    chat_id = message.from_user.id
-    if not await db.is_user_exist(chat_id):
-        data = await client.get_me()
-        BOT_USERNAME = data.username
-        await db.add_user(chat_id)
-        await client.send_message(
-            LOG_CHANNEL,
-            f"#NEWUSER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) started @{BOT_USERNAME} !!",
-    
+    update_channel = UPDATE_CHANNEL
+    if update_channel:
+        try:
+            user = await motech.get_chat_member(update_channel, update.chat.id)
+            if user.status == "kicked out":
+               await update.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 😜**")
+               return
+        except UserNotParticipant:
+            #await update.reply_text(f"Join @{Channel User Name} To Use Me") From Motech.py
+            await update.reply_text(
+                text=f"<b>{SUB_TEXT}</b>",
+                reply_markup=InlineKeyboardMarkup([
+                    [ InlineKeyboardButton(text=f"{JOIN}", url=f"t.me/{UPDATE_CHANNEL}")],
+                    [ InlineKeyboardButton(text=f"{TRY}", url=f"https://t.me/{BOT_USERNAME}?start=try")]
+              ])
+            )
+            return
+        except Exception:
+            await update.reply_text(f"@{UPDATE_CHANNEL}")
+            return  
     reply_markup =  START_BUTTON
     await update.reply_text(
         text=Translation.START_MSG.format(update.from_user.mention),
