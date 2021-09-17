@@ -36,8 +36,10 @@ async def stickers(motech, msg):
         except Exception:
             await msg.reply_text(f"@{UPDATE_CHANNEL}")
             return  
-
-    if msg.sticker:
-        await msg.reply(f"𝐘𝐨𝐮𝐫 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐈𝐃 𝐢𝐬\n`{msg.sticker.file_id}`", quote=True)
-    else:
-        await msg.reply(Translation.ID_TEXT.format(msg.from_user.id))
+@MT_ID_Bot.on_message(filters.command(["stickerid"]))
+async def stickerid(bot, message):   
+    if message.reply_to_message.sticker:
+       await message.reply(f"**Your Sticker ID is**  \n `{message.reply_to_message.sticker.file_id}` \n \n ** Unique ID is ** \n\n`{message.reply_to_message.sticker.file_unique_id}`", quote=True)
+    else: 
+       await message.reply("Hmmm its !! Not a sticker file")
+    
