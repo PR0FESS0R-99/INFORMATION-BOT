@@ -1,4 +1,3 @@
-6 lines (6 sloc)  177 Bytes
 echo "Cloning Repo...."
 git clone https://github.com/PR0FESS0R-99/ID-Bot /ID-Bot
 cd /ID-Bot
