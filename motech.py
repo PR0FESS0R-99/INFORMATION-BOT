@@ -22,3 +22,11 @@ if __name__ == "__main__" :
         workers=100
     )
     mt_botz.run()
+
+print(
+        """
+Your id bot is deployed successfully please to check your bot.
+Join our Support group on telegram https://t.me/Mo_Tech_Group. 
+And also thanks to Dan for pyrogram. 
+"""
+    )
