@@ -55,4 +55,11 @@ Do **Fork** And **Star** The Repository If You Liked It.
 
 # BOT FEATURE
 
-*A SIMPLE TELEGRAM BOT TO GET ID OF A PERSON CHANNEL OR A STICKER PACK..... 
+* A SIMPLE TELEGRAM BOT TO GET ID OF A PERSON CHANNEL OR A STICKER PACK.....
+
+# Credits
+
+* Pyrogram
+* Pr0fess0r_99
+* Mr_jinn_of_tg
+*
