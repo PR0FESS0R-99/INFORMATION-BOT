@@ -1,26 +1,11 @@
-## Information Bot
-
-**Telegram Id Finder Bot**
-
-**<p align="center">
+<p align="center">
 <b>ID BOT V1</b>
-</p>**
+</p>
 <p align="center">
 <img src="https://img.shields.io/github/stars/PR0FESS0R-99/ID-Bot-V1?style=social" />
 <img src="https://img.shields.io/github/forks/PR0FESS0R-99/ID-Bot-V1?style=social" />
 </p>
 
-
-  <a href="https://github.com/PR0FESS0R-99/ID-Bot/stargazers">
-    <img src="https://img.shields.io/github/stars/PR0FESS0R-99/ID-Bot?style=social">
-
-  </a>
-  
-  <a href="https://github.com/PR0FESS0R-99/ID-Bot/fork">
-    <img src="https://img.shields.io/github/forks/PR0FESS0R-99/ID-Bot?label=Fork&style=social">
-
-  </a>  
-</p>
 
 
 <a href="https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/ID-Bot-V1/tree/main">
