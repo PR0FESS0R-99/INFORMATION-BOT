@@ -6,7 +6,7 @@
 <img src="https://img.shields.io/github/forks/PR0FESS0R-99/ID-Bot-V1?style=social" />
 </p>
 
-**Telegram Id Finder Bot **
+**Telegram Id Finder Bot**
 
 # Deploy To Heroku
 
