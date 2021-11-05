@@ -36,7 +36,7 @@
 * **[Pyrogram](https://docs.pyrogram.org/)**
 * **[Pr0fess0r_99](https://github.com/PR0FESS0R-99)** Developer
 * **[Mr_jinn_of_tg](https://github.com/MR-JINN-OF-TG)** Added Sticker Id
-* **[Jijinr](https://github.com/Jijinr)** Added Old Version DockerFile
+* **[Jijinr](https://github.com/Jijinr)** Added Old Version [DockerFile](https://github.com/PR0FESS0R-99/ID-Bot-V1/blob/main/Dockerfile)
 
 
 # Contect us
