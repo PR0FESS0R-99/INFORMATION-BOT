@@ -58,14 +58,12 @@ Do **Fork** And **Star** The Repository If You Liked It.
 
 # BOT FEATURE
 
-'''
-Your Telegram Id
-Your Info
-User Id
-Bot Id
-Channel Id
-Group Id
-'''
+* **Your Telegram Id
+* **Your Info
+* **User Id
+* **Bot Id
+* **Channel Id
+* **Group Id
 
 # Thanks To
 
