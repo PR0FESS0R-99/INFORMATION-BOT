@@ -67,7 +67,7 @@ Do **Fork** And **Star** The Repository If You Liked It.
 
 # Thanks To
 
-* [Pyrogram](https://docs.pyrogram.org/
-* [Pr0fess0r_99](https://github.com/PR0FESS0R-99) Developer
-* [Mr_jinn_of_tg](https://github.com/MR-JINN-OF-TG) Added Sticker Id
-* [Jijinr](https://github.com/Jijinr) Added Old Version DockerFile
+* **[Pyrogram](https://docs.pyrogram.org/)**
+* **[Pr0fess0r_99](https://github.com/PR0FESS0R-99)** Developer
+* **[Mr_jinn_of_tg](https://github.com/MR-JINN-OF-TG)** Added Sticker Id
+* **[Jijinr](https://github.com/Jijinr)** Added Old Version DockerFile
