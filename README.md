@@ -2,7 +2,7 @@
 
 **Telegram Id Finder Bot**
 
-<p align="center">
+# <p align="center">
 <b>ID BOT V1</b>
 </p>
 <p align="center">
