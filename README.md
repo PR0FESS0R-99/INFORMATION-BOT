@@ -8,6 +8,7 @@
 
 
 
+
 <a href="https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/ID-Bot-V1/tree/main">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 
@@ -25,6 +26,7 @@ Do **Fork** And **Star** The Repository If You Liked It.
 
 # BOT FEATURE
 
+* **ForceSub**
 * **Your Telegram Id**
 * **Your Info**
 * **User Id**
