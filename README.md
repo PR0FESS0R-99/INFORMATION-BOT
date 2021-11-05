@@ -2,9 +2,9 @@
 
 **Telegram Id Finder Bot**
 
-# <p align="center">
+**<p align="center">
 <b>ID BOT V1</b>
-</p>
+</p>**
 <p align="center">
 <img src="https://img.shields.io/github/stars/PR0FESS0R-99/ID-Bot-V1?style=social" />
 <img src="https://img.shields.io/github/forks/PR0FESS0R-99/ID-Bot-V1?style=social" />
