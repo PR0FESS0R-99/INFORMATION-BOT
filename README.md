@@ -58,16 +58,16 @@ Do **Fork** And **Star** The Repository If You Liked It.
 
 # BOT FEATURE
 
-```Your Telegram Id
+Your Telegram Id
 Your Info
 User Id
 Bot Id
 Channel Id
-Group Id```
+Group Id
 
 # Credits
 
-* Pyrogram
-* Pr0fess0r_99
-* Mr_jinn_of_tg
-* Jijinr
+* [Pyrogram](
+* [Pr0fess0r_99](https://github.com/PR0FESS0R-99) Developer
+* [Mr_jinn_of_tg](https://github.com/MR-JINN-OF-TG) Added Sticker Id
+* [Jijinr](https://github.com/Jijinr) Added Old Version DockerFile
