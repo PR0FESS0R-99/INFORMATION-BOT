@@ -9,4 +9,4 @@ fi
 cd /ID-Bot-V1
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
-python3 code.py
+python3 motech.py
