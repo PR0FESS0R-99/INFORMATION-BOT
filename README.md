@@ -26,11 +26,12 @@ Do **Fork** And **Star** The Repository If You Liked It.
 
 # Confings
 
-`API_ID` from [@MT_MyTelegramorg_Bot](https://youtu.be/5eEsvLAKVc0) or [Website {Video}](https://youtu.be/5eEsvLAKVc0)
-`API_HASH` from [@MT_MyTelegramorg_Bot](https://youtu.be/5eEsvLAKVc0) or [Website {Video}](https://youtu.be/5eEsvLAKVc0)
-`BOT_TOKEN` from [@BotFather {Main Video}](https://youtu.be/cB4UduCcNWs)
-`UPDATE_CHANNEL` your main channel username without @
-`BOT_USERNAME` your bot usename without @
+
+* `API_ID` from [@MT_MyTelegramorg_Bot](https://youtu.be/5eEsvLAKVc0) or [Website {Video}](https://youtu.be/5eEsvLAKVc0)
+* `API_HASH` from [@MT_MyTelegramorg_Bot](https://youtu.be/5eEsvLAKVc0) or [Website {Video}](https://youtu.be/5eEsvLAKVc0)
+* `BOT_TOKEN` from [@BotFather {Main Video}](https://youtu.be/cB4UduCcNWs)
+* `UPDATE_CHANNEL` your main channel username without @
+* `BOT_USERNAME` your bot usename without @
 
 # BOT FEATURE
 
