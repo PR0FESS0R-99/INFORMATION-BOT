@@ -58,7 +58,8 @@ Do **Fork** And **Star** The Repository If You Liked It.
 
 # BOT FEATURE
 
-* A SIMPLE TELEGRAM BOT TO GET ID OF A PERSON CHANNEL OR A STICKER PACK.....
+-- Your Telegram ID
+eg : Your Telegram Id Is '1219394028'
 
 # Credits
 
