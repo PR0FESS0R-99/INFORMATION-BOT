@@ -35,7 +35,7 @@
 
 * **[Pyrogram](https://docs.pyrogram.org/)**
 * **[Pr0fess0r_99](https://github.com/PR0FESS0R-99)** Developer
-* **[Mr_jinn_of_tg](https://github.com/MR-JINN-OF-TG)** Added Sticker Id
+* **[Mr_jinn_of_tg](https://github.com/MR-JINN-OF-TG)** Added [Sticker Id](https://github.com/PR0FESS0R-99/ID-Bot-V1/blob/44f30fcf2e5a6f4bbbea49855b98daec38409946/MT_ID_Bot/Modules/Sticker.py#L19)
 * **[Jijinr](https://github.com/Jijinr)** Added Old Version [DockerFile](https://github.com/PR0FESS0R-99/ID-Bot-V1/blob/main/Dockerfile)
 
 
