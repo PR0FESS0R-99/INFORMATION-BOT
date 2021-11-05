@@ -6,11 +6,7 @@
 <img src="https://img.shields.io/github/forks/PR0FESS0R-99/ID-Bot-V1?style=social" />
 </p>
 
-<a href="https://github.com/PR0FESS0R-99"><img src="https://github.com/PR0FESS0R-99/Buttons/blob/Professor-99/heroku/herokudeploy-01.svg" alt="PR0FESS0R-99" border="0" height="125" width="200" align="center" /></a>
 
-
-<a href="https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/ID-Bot-V1/tree/main">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 
                                                                                                 
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/PR0FESS0R-99/ID-Bot)
@@ -23,6 +19,14 @@ Join Our [Telegram Group](https://www.telegram.dog/Mo_Tech_Group) For Support/As
 **Report Bugs**, Give Feature Requests There..
    
 Do **Fork** And **Star** The Repository If You Liked It.
+
+# Deploy To Heroku
+
+<a href="https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/ID-Bot-V1/tree/main"><img src="https://github.com/PR0FESS0R-99/Buttons/blob/Professor-99/heroku/herokudeploy-01.svg" alt="PR0FESS0R-99" border="0" height="125" width="200" align="center" /></a>
+
+# Confings
+
+`API_ID` from [@MT_MyTelegramorg_Bot](https://youtu.be/5eEsvLAKVc0) or [Website {Video}](https://youtu.be/5eEsvLAKVc0)
 
 # BOT FEATURE
 
