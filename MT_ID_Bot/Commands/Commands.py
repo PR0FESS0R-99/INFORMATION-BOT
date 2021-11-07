@@ -14,7 +14,7 @@ SUB_TEXT=Translation.FSUB_TEXT # FSUB Information Text
 
 developer="Mrk_yt"
 co_developer="MR_JINN_OF_TG"
-source="https://github.com/PR0FESS0R-99/ID-Bot"
+source="https://github.com/PR0FESS0R-99/ID-Bot-V1"
 mt_chat="mo_tech_group"
 mt_bot="mo_tech_yt"
 

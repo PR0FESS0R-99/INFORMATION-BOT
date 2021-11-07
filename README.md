@@ -1,58 +1,46 @@
-## Information Bot
-
-  </a>
+<p align="center">
+<b>ID BOT V1</b>
 </p>
 <p align="center">
-  <a href="https://github.com/PR0FESS0R-99/ID-Bot/stargazers">
-    <img src="https://img.shields.io/github/stars/PR0FESS0R-99/ID-Bot?style=social">
-
-  </a>
-  
-  <a href="https://github.com/PR0FESS0R-99/ID-Bot/fork">
-    <img src="https://img.shields.io/github/forks/PR0FESS0R-99/ID-Bot?label=Fork&style=social">
-
-  </a>  
+<img src="https://img.shields.io/github/stars/PR0FESS0R-99/ID-Bot-V1?style=social" />
+<img src="https://img.shields.io/github/forks/PR0FESS0R-99/ID-Bot-V1?style=social" />
 </p>
 
-<details><summary>Deploy To Heroku</summary>
-<p>
-<br>
-<a href="https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/ID-Bot/tree/main">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
-</p>
-</details>
+**Telegram Id Finder Bot**
 
-<details><summary>Deploy To VPS</summary>
-<p>
-<pre>
-Running https://github.com/PR0FESS0R-99/ID-Bot/tree/blob/main
-cd PR0FESS0R-99/ID-Bot-ReMaster
-pip3 install -r requirements.txt
-# Change The Vars Of bot/__init__.py File Accordingly
-python3 -m motech.py
-</pre>
-</p>
-</details>
+# Deploy To Heroku
 
-<details><summary>Credits</summary>
-<p>
-<pre>
-                                                                                                            
-[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/PR0FESS0R-99/ID-Bot)
-[![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20Me-Anything-1abc9c.svg)](https://telegram.dog/PR0FESS0R_99)
-[![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://telegram.dog/)
-[![Join Channel !](https://badgen.net/badge/🔊%20Join%20/Channel/Black)](https://telegram.dog/mo_tech_YT)
+<a href="https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/ID-Bot-V1/tree/main"><img src="https://github.com/PR0FESS0R-99/Buttons/blob/Professor-99/heroku/herokudeploy-01.svg" alt="PR0FESS0R-99" border="0" height="125" width="200" align="center" /></a>
 
-Join Our [Telegram Group](https://www.telegram.dog/Mo_Tech_Group) For Support/Assistance And Our [Channel](https://www.telegram.dog/Mo_Tech_YT) For Updates.   
-   
-**Report Bugs**, Give Feature Requests There..
-   
-Do **Fork** And **Star** The Repository If You Liked It.
-</pre>
-</p>
-</details>
+# Confings
+
+
+* `API_ID` from [@MT_MyTelegramorg_Bot](https://youtu.be/5eEsvLAKVc0) or [Website {Video}](https://youtu.be/5eEsvLAKVc0)
+* `API_HASH` from [@MT_MyTelegramorg_Bot](https://youtu.be/5eEsvLAKVc0) or [Website {Video}](https://youtu.be/5eEsvLAKVc0)
+* `BOT_TOKEN` from [@BotFather {Main Video}](https://youtu.be/cB4UduCcNWs)
+* `UPDATE_CHANNEL` your main channel username without @
+* `BOT_USERNAME` your bot usename without @
 
 # BOT FEATURE
 
-*A SIMPLE TELEGRAM BOT TO GET ID OF A PERSON CHANNEL OR A STICKER PACK..... 
+* **ForceSub**
+* **Your Telegram Id**
+* **Your Info**
+* **User Id**
+* **Bot Id**
+* **Channel Id**
+* **Group Id**
+
+# Thanks To
+
+* **[Pyrogram](https://docs.pyrogram.org/)**
+* **[Pr0fess0r_99](https://github.com/PR0FESS0R-99)** Developer
+* **[Mr_jinn_of_tg](https://github.com/MR-JINN-OF-TG)** Added [Sticker Id](https://github.com/PR0FESS0R-99/ID-Bot-V1/blob/44f30fcf2e5a6f4bbbea49855b98daec38409946/MT_ID_Bot/Modules/Sticker.py#L19)
+* **[Jijinr](https://github.com/Jijinr)** Added Old Version [DockerFile](https://github.com/PR0FESS0R-99/ID-Bot-V1/blob/main/Dockerfile)
+
+
+# Contect us
+
+<a href="https://www.instagram.com/mrk_yt_"><img alt="Instagram" src="https://img.shields.io/badge/Mrk_YT_-%23E4405F.svg?&style=for-the-badge&logo=Instagram&logoColor=white"/></a>
+<a href="https://t.me/PR0FESS0R_99"><img alt="Telegram" src="https://img.shields.io/badge/PR0FESS0R_99-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/></a>
+<a href="https://youtube.com/c/MoTech_YT"><img alt="youtube" src="https://img.shields.io/youtube/channel/subscribers/UCmGBpXoM-OEm-FacOccVKgQ?V?label=Subscribers&style=for-the-badge&logo=youtube&logoColor=red"/></a>
