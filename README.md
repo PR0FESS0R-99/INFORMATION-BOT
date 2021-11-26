@@ -1,3 +1,12 @@
+
+
+
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/ID-Bot-V1)
+
+
+
+
+
 <p align="center">
 <b>ID BOT V1</b>
 </p>
