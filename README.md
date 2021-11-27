@@ -12,6 +12,10 @@
 
 <a href="https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/ID-Bot-V1/tree/main"><img src="https://github.com/PR0FESS0R-99/Buttons/blob/Professor-99/heroku/herokudeploy-01.svg" alt="PR0FESS0R-99" border="0" height="125" width="200" align="center" /></a>
 
+# Deploy To Railway
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FPR0FESS0R-99%2FID-Bot-V1&envs=API_HASH%2CAPI_ID%2CBOT_TOKEN%2CBOT_USERNAME%2CUPDATE_CHANNEL&optionalEnvs=BOT_USERNAME&API_HASHDesc=Your+API+Hash+From+https%3A%2F%2Fyoutu.be%2F5eEsvLAKVc0+or+%40MT_MyTelegramOrg_Bot&API_IDDesc=Your+APP+ID+From+https%3A%2F%2Fyoutu.be%2F5eEsvLAKVc0+or+%40MT_MyTelegramOrg_Bot&BOT_TOKENDesc=Your+Bot+Token+From+%40BotFather&BOT_USERNAMEDesc=Bot+UserName+From+%28https%3A%2F%2Fyoutu.be%2FcB4UduCcNWs%29+Without+%40&UPDATE_CHANNELDesc=Channel+User+Name+Without+%40+Eg+Mo_Tech_YT&UPDATE_CHANNELDefault=Mo_Tech_YT&referralCode=MoTech)
+
 # Confings
 
 
