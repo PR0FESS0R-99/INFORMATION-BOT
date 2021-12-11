@@ -53,7 +53,7 @@ async def info(motech, msg):
                 quote=True,
             )
         else:
-            text = f"<u>𝐅𝐨𝐫𝐰𝐚𝐫𝐝 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 👀</u>.\n\n"
+            text = '<u>𝐅𝐨𝐫𝐰𝐚𝐫𝐝 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 👀</u>.\n\n'
             if msg.forward_from_chat["type"] == "channel":
                 text += "<u>📢 𝐂𝐡𝐚𝐧𝐧𝐞𝐥</u>"
             if msg.forward_from_chat["type"] == "supergroup":
