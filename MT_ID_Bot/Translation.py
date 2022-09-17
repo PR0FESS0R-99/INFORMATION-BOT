@@ -37,7 +37,7 @@ class Translation(object):
 
 <u>👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</u> : <a href='t.me/{}'>@𝐏𝐑0𝐅𝐄𝐒𝐒0𝐑_99</a>
 
-<u>👨‍💻 𝐂𝐨 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</u> : <a href='https://t.me/{}' >@𝐌𝐑_𝐉𝐈𝐍𝐍_𝐎𝐅_𝐓𝐆</a>
+<u>👨‍💻 𝐂𝐨 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</u> : <a href='https://t.me/{}' >@JinnSulthan</a>
 
 <u>👥 𝐆𝐫𝐨𝐮𝐩</u> :   <a href='t.me/{}'>𝐌𝐓 𝐂𝐡𝐚𝐭𝐬</a>
  
