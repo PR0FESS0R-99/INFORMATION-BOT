@@ -8,3 +8,14 @@
 # Archived
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
 Licensed under [GNU AGPL 2.0.](https://github.com/PR0FESS0R-99/INFORMATION-BOT/blob/master/LICENSE)
+
+
+```
+git branch -m main PR0FESS0R-99
+
+git fetch origin
+
+git branch -u origin/PR0FESS0R-99 PR0FESS0R-99
+
+git remote set-head origin -a
+```
